@@ -5,6 +5,6 @@ pluginManagement {
     }
 }
 
-rootProject.name = "forktest"
+rootProject.name = "PoliPaper"
 
-include("forktest-api", "forktest-server")
+include("polipaper-api", "polipaper-server")

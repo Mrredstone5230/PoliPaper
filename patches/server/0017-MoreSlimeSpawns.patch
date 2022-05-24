@@ -1,0 +1,18 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Mrredstone5230 <sebastienduf@icloud.com>
+Date: Sun, 24 Octo 2021 22:11:11 +0100
+Subject: More slime spawns
+
+diff --git a/src/main/java/net/minecraft/world/entity/monster/Slime.java b/src/main/java/net/minecraft/world/entity/monster/Slime.java
+index 2e819d329..538014fbe 100644
+--- a/src/main/java/net/minecraft/world/entity/monster/Slime.java
++++ b/src/main/java/net/minecraft/world/entity/monster/Slime.java
+@@ -347,7 +347,7 @@ public class Slime extends Mob implements Enemy {
+
+             // Paper start - Replace rules for Height in Slime Chunks
+             final double maxHeightSlimeChunk = world.getMinecraftWorld().paperConfig.slimeMaxSpawnHeightInSlimeChunks;
+-            if (random.nextInt(10) == 0 && flag && pos.getY() < maxHeightSlimeChunk) {
++            if (flag && pos.getY() < maxHeightSlimeChunk) {
+             // Paper end
+                 return checkMobSpawnRules(type, world, spawnReason, pos, random);
+             }
